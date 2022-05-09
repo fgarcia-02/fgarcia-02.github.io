@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<script>
+		MathJax = {
+			tex: {
+			inlineMath: [['$', '$']]
+			}
+		};
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+	<link rel="stylesheet" href="../../MainStyles.css">
+	<link rel="stylesheet" href="../../DarkMode.css">
+	<title>Blog - Heisenberg's Mysterious Forces</title>
+	<style>
+	.title {
+background-color: #0052cc;
+border: 1px solid #0052cc;
+border-radius: 6px;
+}
+	.subtitle {
+background-color: #0066ff;
+border: 1px solid #0066ff;
+border-radius: 6px;
+}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+  <div class="Top">
+  <h1 style="text-align: center"><a href="index.html">Fernando Garcia</a><h1>
+				<h3 style="text-align: center">
+					<a href="../../Blog.html" class="currentPage">Blog</a>   &nbsp  &nbsp
+					<a href="../../Notes.html">Notes</a>    &nbsp  &nbsp
+					<a href="../../Other.html" >Other</a>    &nbsp  &nbsp
+					<a href="../../AboutMe.html">About me</a>
+				<h3>
+  </div>
+  <div class="LeftMenu">
+  <h2>Contents</h2>
+	<h4 ><a href="#Introduction">Introduction</a></h4>
+	<h4 ><a href="#Two particles in a box">Two particles in a box</a></h4>
+	<ul>
+	<li><a href="#One term, symmetric state">One term, symmetric state</a></li>
+	<li><a href="#Two terms, symmetric state">Two terms, symmetric state</a></li>
+	<li><a href="#Two terms, antisymmetric state">Two terms, antisymmetric state</a></li>
+	</ul>
+  </div>
+  <div class="MyContent">
+	<!-- Blog Title  -->
+	<h1 style="text-align: center">Heisenberg's Mysterious Forces<h1>
+	<!-- SECTION 1  -->
+	<h2 id="Introduction"><span class="title">Introduction</span></h2>
+	<p style="text-align: justify;" >A</p>
+	<!-- SECTION 2  -->
+	<h2 id="Two particles in a box"><span class="title">Two particles in a box</span></h2>
+	<p style="text-align: justify;" >Recall that the solutions for the particle in a box potential are of the form:</p>
+	\[\psi _n(x)=\sqrt{\frac{2}{L}}\sin \left( \frac{n\pi }{L}x \right) \tag{for $0 < x < L$}\]
+	
+	<img src="HeisenbergsForcesMedia/PBoxPlots.svg" style="max-width:60%;" class="centerImg">
+	<p style="text-align: center; font-size: 18px;" >Fig. 1: First three eigenfunctions for the 1D particle in a box.<br>Left: Probability amplitudes $\psi _n(x)$. Right: probability densities $|\psi _n(x)|^2$.</p>
+	<p style="text-align: justify;" >With that in mind, let's start building some entangled states.</p>
+	<!-- SUBSECTION 2.1  -->
+	<h4 id="One term symmetric state"><span class="subtitle">One term, symmetric state</span></h4>
+	<p style="text-align: justify;" >Suppose we have a system of the form</p>
+	\[\Psi _n(x_1 ,x_2 ) =\psi _n(x_1 )\psi _n(x_2)\]
+	<p style="text-align: justify;" >That is, we have an entangled, single-term, symmetric system where both particles are said to have the same energy. Here, $x_1 $ refers to the $x$-position of the first particle and $x_2$ to that of the second. Explicitly, some examples are:</p>
+	\begin{align*}
+		\Psi _1(x_1 ,x_2 ) &= \frac{2}{L}\sin \left( \frac{\pi }{L}x_1 \right)\sin \left( \frac{\pi }{L}x_2 \right) \\
+		\Psi _2(x_1 ,x_2 ) &= \frac{2}{L}\sin \left( \frac{2\pi }{L}x_1 \right)\sin \left( \frac{2\pi }{L}x_2 \right) \\
+		\Psi _3(x_1 ,x_2 ) &= \frac{2}{L}\sin \left( \frac{3\pi }{L}x_1 \right)\sin \left( \frac{3\pi }{L}x_2 \right) \\
+		 &{\;}\;\;\;\; \text{etc.}  
+	\end{align*}
+	<p style="text-align: justify;" >Suppose we want the probability of finding both particles in the first half of the box (i.e., between $0 < x < L/2$). It turns out that it is always:</p>
+	\[P=\frac{1}{4}\]
+	Which makes sense, because when we take the integrals:
+	\begin{align*}
+		P &= \int_{0}^{L/2}\int_{0}^{L/2} \frac{2}{L}\sin \left( \frac{n\pi }{L}x_1 \right)\sin \left( \frac{n\pi }{L}x_2 \right)\frac{2}{L}\sin \left( \frac{n\pi }{L}x_1 \right)\sin \left( \frac{n\pi }{L}x_2 \right)dx_1 dx_2   \\
+		 &= \frac{4}{L^2 }\cdot  \left[ \int_{0}^{L/2} \sin ^2\left( \frac{n\pi }{L}x_1 \right) dx_1 \right] \cdot  \left[ \int_{0}^{L/2} \sin ^2\left( \frac{n\pi }{L}x_2 \right) dx_2 \right]  \\
+		 &= \frac{4}{L^2 } \left[ \frac{L}{4} \right] \left[ \frac{L}{4} \right] \\
+		 &= \frac{1}{4}
+	\end{align*} 
+	<p style="text-align: justify;" >It's as simple as "the probability of one is  $1/2$, the probability of the other one is also $1/2$, then together we have $1/4$."</p>
+
+	<p style="text-align: justify;" >This case indeed has no unique properties, but it is precisely this that will come in handy when thinking about what's happening when we have more than one term in our quantum state.</p>
+
+	<p style="text-align: justify;" >Mathematically, the critical part of this example was that the product in the integrand was between monomials (and thus, we were able to split the integral quickly), as we shall later say: There were no "interference" cross terms. Individual probabilities won't be enough to multiply to the total/net probability...</p>
+	<!-- SUBSECTION 2.2  -->
+	<h4 id="Two terms, symmetric state"><span class="subtitle">Two terms, symmetric state</span></h4>
+	<p style="text-align: justify;" >Let's now consider symmetric, entangled systems with two terms. That is, systems of the form</p>
+	\[\Psi _{m,n}(x_1 ,x_2 )=\frac{1}{\sqrt{2}}\psi _m(x_1 )\psi _n(x_2 )+\frac{1}{\sqrt{2}}\psi _n(x_1 )\psi _m(x_2 )\]
+	<p style="text-align: justify;" >Where, for now, let's consider the case where both terms have the same coefficient (and thus equal probabilities between them).</p>
+	<!-- SUBSECTION 2.3  -->
+	<h4 id="Two terms, antisymmetric state"><span class="subtitle">Two terms, antisymmetric state</span></h4>
+	<p style="text-align: justify;" >Such systems are almost the same to the last ones. Consider:</p>
+	\[\Psi _{m,n}(x_1 ,x_2 )=\frac{1}{\sqrt{2}}\psi _m(x_1 )\psi _n(x_2 )-\frac{1}{\sqrt{2}}\psi _n(x_1 )\psi _m(x_2 )\]
+	
+	<hr>
+	
+  </div>
+  <div class="Bottom"></div>
+  <div class="RightNotes"></div>
+</div>
+	</body>
+</html>

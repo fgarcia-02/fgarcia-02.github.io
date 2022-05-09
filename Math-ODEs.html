@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<script>
+		MathJax = {
+			tex: {
+			inlineMath: [['$', '$']]
+			}
+		};
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+	<link rel="stylesheet" href="MainStyles.css">
+	<link rel="stylesheet" href="DarkMode.css">
+	<link rel="stylesheet" href="NotesColors.css">
+	<title>ODEs</title>
+	</head>
+	<body>
+		<div class="container">
+  <div class="Top">
+  <h1 style="text-align: center"><a href="index.html">Fernando Garcia</a><h1>
+				<h3 style="text-align: center">
+					<a href="Blog.html">Blog</a>   &nbsp  &nbsp
+					<a href="Notes.html" class="currentPage">Notes</a>    &nbsp  &nbsp
+					<a href="Other.html" >Other</a>    &nbsp  &nbsp
+					<a href="AboutMe.html">About me</a>
+				<h3>
+  </div>
+<div class="LeftMenu">
+	<h4 ><a href="#Preliminary concepts">Preliminary concepts</a></h4>
+	<h4 ><a href="#Visual methods for DEs">Visualization methods for DEs</a></h4>
+	<ul>
+		<li><a href="#Direction Fields">Direction Fields</a></li>
+		<li><a href="#Phase portraits">Phase portraits</a></li>
+	</ul> 
+	<h4 ><a href="#1st order methods">1st order methods</a></h4>
+	<ul>
+		<li><a href="#Separation of Variables">Separation of Variables</a></li>
+	</ul>
+  </div>
+  <div class="MyContent">
+   <h1 style="text-align: center">~ Ordinary Differential Equations ~<h1>
+    <h2 id="Preliminary concepts">Preliminary concepts</h2>
+	<p style="text-align: justify;">The following are definitions, ideas, and other things from previous branches of mathematics and Differential Equations terminology that will be used repetitively throughout the notes:</p>
+                                   
+    <p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspBy <u>order</u> we refer to the degree of the highest derivative present in our differential equation.</p>
+	
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspWe say we have an <u>explicit</u> solution when we can perfectly describe the dependent variable in terms of the independent variable.
+	
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspSimilarly, we have an <u>implicit</u> solution when we find a <i>relation</i> satisfying the differential equation (rather than a <i>function</i>).
+	
+	<p style="text-align: justify;">Just as we define domains for functions, a differential equation has a domain. For a function to be a solution, it must satisfy the differential equation in all of its domain.</p>
+	
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspFor a given $n$th order differential equation, we can find its $n$-parameter family of solutions, which contain $n$ parameters.</p>
+	
+	<p style="text-align: justify;">This is similar in nature to adding $+C$ after taking the indefinite integral of a function. For $n$th order differential equations, we will have $n$ <u>paramaters</u> $C_i$ to manipulate our solution.</p>
+	
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspA <u>particular solution</u> is one that has no arbitrary parameters to manipulate.</p>
+	
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspSimilarly, the <u>General Solution</u> is the $n$-parameter family that is capable of describing all the particular solutions for a given differential equation.</p>
+<hr>                                                
+	<h2 id="Visual methods for DEs">Visualization methods for DEs</h2>
+             
+	<h4 id="Direction Fields">Slope/Direction Fields (1st order DEs)</h4>
+    
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspWe call <u>Integral Curves</u> the graph of solutions to a differential equation.
+	
+	<p style="text-align: justify;">Suppose you have a first order differential equation</p>
+	\[y'=F(x,y)\]
+	<p style="text-align: justify;">Then we can calculate slopes  $y'$ at, say, integer coordinate points in the plane. With these, we can get a feel of what a solution passing through that point looks like:</p>
+	<img src="ODEs/001-SlopeField1.png" style="max-width:60%;" class="centerImg">
+	\[y'=x-y\]
+	<p style="text-align: justify;">Finding the slope of the tangent line is a simple as plugging in the coordinates of points.</p>
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspThe small "tangent" lines we draw are called <u>line elements</u>. A <u>slope/direction field</u> is a collection of line elements for a given differential equation.</p>
+	<p style="text-align: justify;">Notice how, as we draw more and more line elements, we start to recognise "paths." Not surprisingly, they correspond to an integral curve. As our eyes follow the direction of tangent line segments, we see <u>streamlines</u>, for example:</p>
+	<img src="ODEs/001-SlopeField2.png" style="max-width:60%;" class="centerImg">
+	<p style="text-align: justify;">In particular, all those streamlines (which are, of course, integral lines) come from the general solution:</p>
+	$$y=x-1+\frac{C}{e^{x}} $$
+	<p style="text-align: justify;">Where different values of $C$ give different integra lines</p>
+	<p style="text-align: justify;">Notice that the stremlines seem to never crash into each other. We formalize this with the following two definitions:</p>
+	<p style="text-align: justify;"><span class="def">&nbspDef.&nbsp</span> &nbspWe say a point is an <u>ordinary point</u> if it is part of only (and only!) one stremline/integral curve. Conversely, we say a point is a <u>singular point</u> if it is not a singular point (it can be part of two or more integral curves, but it can also be part of none) <i>and</i> it is "surrounded" by ordinary points no matter how close we see around its <i>neighborhood</i>.</p>
+	<img src="ODEs/001-SlopeField3.png" style="max-width:60%;" class="centerImg">
+	<p style="text-align: justify;">The slope field above corresponds to the differential equation, and has for general solution:</p>
+	\[y'=\frac{4(y-4)}{3x}\;\Rightarrow \; y=Cx^{4/3}+4\]
+	<img src="ODEs/001-SlopeField4.png" style="max-width:60%;" class="centerImg">
+	<p style="text-align: justify;">The five integral lines above correspond to $C=-2,-1,0,1,2$. Notice how all of them pass through the <i>singular point</i>.</p>
+	<h4 id="Phase portraits">Phase portraits</h4>
+	<hr>
+	<h2 id="1st order methods">1st order methods</h2>
+	<p style="text-align: justify;">It can't be stressed enough that, when presented with a differential equation, the first thing you should do is associate the D.E. with a given "type."</p>
+	<p style="text-align: justify;">It turns out that many differential equations have no explicit solution, and although we <i>could</i> find the implicit solution, it has no use at all.</p>
+	<p style="text-align: justify;">The best way to become a master of differential equations is to be able to identify its type, if any, and proceed with the method  <i>we know</i> will yield a solution.</p>
+	<h4 id="Separation of Variables">Separation of Variables</h4>
+	<p style="text-align: justify;">Recall that first order differential equations can be written in terms of a function $F$ as:</p>
+	\[y'=F(x,y)\]
+	<p style="text-align: justify;">Now, consider differential equations with the form (and its expansion):</p>
+	\begin{align*}
+		A(x,y)y' +B(x,y)&= 0 \\
+		A(x,y)\frac{dy}{dx} +B(x,y)&= 0 \\
+		dx \left( A(x,y)\frac{dy}{dx} +B(x,y) \right) &= dx\cdot 0 \\
+		A(x,y)dy +B(x,y)dx &= 0 
+	\end{align*}
+	<p style="text-align: justify;"><i>If</i> you find a way to to rewrite the last expression in the form:</p>
+	\[f(x)dx+g(y)dy=0\]
+	<p style="text-align: justify;">Then we are good! Notice that our variables are isolated from each other. They are <u>separated</u>. A solution is found by integrating everything:</p>
+  </div>
+  <div class="Bottom"></div>
+  <div class="RightNotes"></div>
+</div>
+	</body>
+</html>

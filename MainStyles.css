@@ -1,0 +1,49 @@
+.container {
+  display: grid; 
+  grid-template-columns: 5% 20% 50% 25%; 
+  grid-template-rows: 15px 100px auto 15px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . Top ."
+    ". LeftMenu MyContent RightNotes"
+    ". . Bottom ."; 
+}
+
+.Top { grid-area: Top;
+white-space:nowrap; }
+
+.MyContent { grid-area: MyContent; }
+
+.LeftMenu {
+	grid-area: LeftMenu;
+}
+
+.Bottom { grid-area: Bottom; }
+
+.RightNotes { grid-area: RightNotes; }
+
+.currentPage{
+	color:yellow;
+}
+
+.centerImg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BlogAbstract{
+	max-width:95%;
+	background-color: #494949;
+	border: 5px solid #A4A4A4;
+	border-radius: 15px;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BlogAbstract:hover{
+	background-color: #676767;
+}
+

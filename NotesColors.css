@@ -1,0 +1,29 @@
+.def {
+background-color: #CD5940;
+border: 1px solid #CD5940;
+border-radius: 5px;
+}
+
+.theo {
+background-color: #40B4CD;
+border: 1px solid #40B4CD;
+border-radius: 5px;
+}
+
+.lem {
+background-color: #6ECD40;
+border: 1px solid #6ECD40;
+border-radius: 5px;
+}
+
+.example {
+background-color: #A040CD;
+border: 1px solid #A040CD;
+border-radius: 5px;
+}
+
+.axiom {
+background-color: #CD9F40;
+border: 1px solid #CD9F40;
+border-radius: 5px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<script>
+		MathJax = {
+			tex: {
+			inlineMath: [['$', '$']]
+			}
+		};
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+	<link rel="stylesheet" href="../../MainStyles.css">
+	<link rel="stylesheet" href="../../DarkMode.css">
+	<title>Blog - Heisenberg's Mysterious Forces</title>
+	<style>
+	.title {
+background-color: #0052cc;
+border: 1px solid #0052cc;
+border-radius: 6px;
+}
+	.subtitle {
+background-color: #0066ff;
+border: 1px solid #0066ff;
+border-radius: 6px;
+}
+	</style>
+	</head>
+	<body>
+		<div class="container">
+  <div class="Top">
+  <h1 style="text-align: center"><a href="index.html">Fernando Garcia</a><h1>
+				<h3 style="text-align: center">
+					<a href="../../Blog.html" class="currentPage">Blog</a>   &nbsp  &nbsp
+					<a href="../../Notes.html">Notes</a>    &nbsp  &nbsp
+					<a href="../../Other.html" >Other</a>    &nbsp  &nbsp
+					<a href="../../AboutMe.html">About me</a>
+				<h3>
+  </div>
+  <div class="LeftMenu">
+  <h2>Contents</h2>
+	<h4 ><a href="#One particle quantum systems">One particle quantum systems: quick base knowledge</a></h4>
+	<ul>
+	<li><a href="#Where psi comes from">Where $\psi$ comes from</a></li>
+	<li><a href="#Superpositions">Superpositions</a></li>
+	<li><a href="#Goint into higher dimensions">Goint into higher dimensions</a></li>
+	</ul>
+  </div>
+  <div class="MyContent">
+   <h1 style="text-align: center">Heisenberg's Mysterious Forces<h1>
+   <!-- SECTION 1  -->
+	<h2 id="One particle quantum systems"><span class="title">One particle quantum systems: quick base knowledge</span></h2>
+	<p style="text-align: justify;" >Though Quantum mechanics in one dimension is relatively straightforward, we can find a couple of exciting surprises here and there. Let's start with one particle. </p>
+	<!-- SUBSECTION 1.1  -->
+<h4 id="Where psi comes from"><span class="subtitle">Where $\psi$ comes from</span></h4>
+<p style="text-align: justify;" >Through Schrödinger's equation, we can solve our system for a given potential. More specifically, the "complete" version of Schrödinger's equation is reduced to a time-independent equation:</p>
+\[-\frac{\hbar ^2 }{2m}\frac{d^2 \psi }{dx^2 }+V\psi =E\psi \;\;\Leftrightarrow \;\;\widehat{H}\psi =E\psi \]
+
+<p style="text-align: justify;" >From this, we can find the wave functions $\psi$ that describe our system. Classic problems include:</p>
+<ul>
+<li>The particle in a box:</li>
+\[V(x)= \begin{cases} \begin{matrix}  0 & 0 < x < L \\  \infty  & \text{elsewhere}  \\  \end{matrix} \end{cases} \;\;\;\Rightarrow \;\;\;\psi _n(x)=\sqrt{\frac{2}{L}}\sin \left( \frac{n\pi }{L}x \right)   \]
+
+<li>The simple harmonic oscillator:</li>
+\[V(x)=\frac{1}{2}m\omega ^2 x^2 \;\;\;\Rightarrow \;\;\; \psi _n(x)=A_n\text{H} _n \left[ \sqrt{\frac{m\omega }{\hbar }}x \right] \exp \left( -\frac{m\omega }{2\hbar }x^2  \right) \]
+</ul>
+<p style="text-align: justify;" >In both examples, $n$ denotes the energy level. For particles in a box, $n$ starts from $1$. For the simple harmonic oscillator, we start at $0$.</p>
+<p style="text-align: justify;" >Either way, $\psi $ describes what we call probability amplitude which then becomes a probability density after we take the squared modulus.</p>
+\[|\psi |^2 =\psi ^* \psi \tag{Yes, $\psi $ can be complex!}\]
+ <p style="text-align: justify;" >This is great because now we can use integrals to calculate probabilities to find a particle between one point and another one:</p>
+\[\int_{0}^{1} |\psi |^2 dx=\text{some value between 0 and 1.} \]
+<p style="text-align: justify;" >Of course, when we take the integral over all space, we should expect it to yield $1$.</p>
+\[\int_{-\infty }^{\infty } |\psi |^2 dx=1 \]
+<!-- SUBSECTION 1.2  -->
+<h4 id="Superpositions"><span class="subtitle">Superpositions</span></h4>
+
+<!-- SUBSECTION 1.3  -->
+<h4 id="Goint into higher dimensions" ><span class="subtitle">Goint into higher dimensions</span></h4>
+<p style="text-align: justify;" >Because we employ the <i>separation of variables</i> technique to solve the Time Independent Schrödinger Equation, extrapolating to higher dimensions is (for the most part) as simple as multiplying with itself the 1D result as many times as we have dimensions. We can even break isotropy without going deep into the math itself.</p>
+
+<p style="text-align: justify;" >For example, the 3D version of a particle in a box is</p>
+<!-- Eq-->
+<p style="text-align: justify;" >Where, if we let $a=b=c$, our prism turns into a cube with <i>symmetry</i> and the equation simplifies to:</p>
+<!-- Eq-->
+<p style="text-align: justify;" >Something similar happens with the 3D harmonic oscillator:</p>
+<!-- Eq-->
+
+<!-- Multiparticle systems -->
+	
+	<hr>
+	
+  </div>
+  <div class="Bottom"></div>
+  <div class="RightNotes"></div>
+</div>
+	</body>
+</html>

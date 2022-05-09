@@ -1,0 +1,91 @@
+.container {  display: grid;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 0.1fr 0.3fr 3.2fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "TitleLeft TitleBar TitleRight"
+    "SideLeft MyActualContent SideRight"
+    "BottomLeft BottomBar BottomRight";
+}
+
+.TitleBar { grid-area: TitleBar; }
+
+.MyActualContent { grid-area: MyActualContent; }
+
+.BottomBar { grid-area: BottomBar; }
+
+.SideLeft { grid-area: SideLeft; }
+
+.SideRight { grid-area: SideRight; }
+
+.BottomLeft { grid-area: BottomLeft; }
+
+.BottomRight { grid-area: BottomRight; }
+
+.TitleLeft { grid-area: TitleLeft; }
+
+.TitleRight { grid-area: TitleRight; }
+
+.NavHrPost {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+.NavHrPost:after {
+    content: "ψ";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+.NavHrPre {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+.NavHrPre:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+a.NavLinks {
+	color:black;
+}
+
+@font-face { font-family: MyMainFont; src: url('cmbx12.TTF'); } 
+
+
+p {
+  font-family: MyMainFont
+  }
+ 
+h1 {
+  font-family: MyMainFont
+  }
+ 
+h2 {
+  font-family: MyMainFont
+  }
+ 
+h3 {
+  font-family: MyMainFont
+  }
+ 
+h4 {
+  font-family: MyMainFont
+  }

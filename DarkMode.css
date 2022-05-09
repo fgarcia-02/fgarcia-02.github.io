@@ -1,0 +1,22 @@
+body {
+	background-color:#121212;
+	color:white;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	color:white;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+ul li {
+	color:white;
+}
+
+
+p {
+  font-size: 22px;
+}
