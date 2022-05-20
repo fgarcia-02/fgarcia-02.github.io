@@ -39,7 +39,7 @@ border-radius: 6px;
 				<h3>
   </div>
   <div class="LeftMenu">
-  <h2><u>Contents</u></h2>
+  <h2>Contents</h2>
 	<h4 ><a href="#Introduction">Introduction</a></h4>
 	<h4 ><a href="#Two particles in a box">Two particles in a box</a></h4>
 	<ul>

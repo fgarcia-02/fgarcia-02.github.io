@@ -47,6 +47,3 @@ white-space:nowrap; }
 	background-color: #676767;
 }
 
-.NA {
-		color:#292e2a;
-	}

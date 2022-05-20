@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<script>
+		MathJax = {
+			tex: {
+			inlineMath: [['$', '$']]
+			}
+		};
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+	</script>
+	<!--<link rel="stylesheet" href="MainStyles.css">-->
+	<link rel="stylesheet" href="DarkMode.css">
+	<title>Summer 2022</title>
+	<style>
+		.row {
+			display: -ms-flexbox; /* IE 10 */
+			display: flex;
+			-ms-flex-wrap: wrap; /* IE 10 */
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+
+/* Create two equal columns that sits next to each other */
+		.column {
+			-ms-flex: 20%; /* IE 10 */
+			flex: 20%;
+			padding: 0 4px;
+		}
+
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+		}
+		
+		.container {
+  display: grid; 
+  grid-template-columns: 5% 10% 70% 15%; 
+  grid-template-rows: 15px 100px auto 15px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . Top ."
+    ". LeftMenu MyContent RightNotes"
+    ". . Bottom ."; 
+}
+
+.Top { grid-area: Top;
+white-space:nowrap; }
+
+.MyContent { grid-area: MyContent; }
+
+.LeftMenu {
+	grid-area: LeftMenu;
+}
+
+.Bottom { grid-area: Bottom; }
+
+.RightNotes { grid-area: RightNotes; }
+	</style>
+	</head>
+	<body>
+		
+		<div class="container">
+  <div class="Top">
+  <h1 style="text-align: center"><a href="index.html">Fernando Garcia</a><h1>
+				<h3 style="text-align: center">
+					<i>(My)</i> Summer 2022
+				<h3>
+  </div>
+  <div class="LeftMenu">
+	<p style="text-align: center;" ><a href="AboutMe.html" class="NA">Back to<br>my page</a></p>
+  </div>
+  <div class="MyContent">
+  
+  <!-- 9 to 12 aspect ratio-->
+  
+	<!-- M O V I E S -->
+	<h2 style="text-align: center">Movies</h2>
+	<div class="row"> 
+		<div class="column">
+			<img src="summer2022/movies/KoeNoKatachi.jpg" style="width:100%">
+			<p style="text-align:center;">A silent voice<br>May 14th</p>
+			<img src="summer2022/movies/summerghost.jpg" style="width:100%">
+			<p style="text-align:center;">Summer Ghost<br>May 19th</p>
+		</div>
+		<div class="column">
+			<img src="summer2022/movies/SummerWars2.jpg" style="width:100%">
+			<p style="text-align:center;">Summer Wars<br>May 17th</p>
+		</div>
+		<div class="column">
+			<img src="summer2022/movies/WolfChildren.jpg" style="width:100%">
+			<p style="text-align:center;">Wolf Children<br>May 18th</p>
+		</div>
+		<div class="column">
+			<img src="summer2022/movies/TheBoyAndTheBeast.jpg" style="width:100%">
+			<p style="text-align:center;">The Boy And The Beast<br>May 19th</p>
+		</div>
+	</div>
+	<!-- B O O K S -->
+	<h2 style="text-align: center">Books</h2>
+	<div class="row"> 
+		<div class="column">
+			<img src="summer2022/books/onimonogatari.jpg" style="width:100%">
+			<p style="text-align:center;">Onimonogatari<br>~ ~ ~</p>
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+	</div>
+	
+	<!-- S E R I E S // A N I M E -->
+	<h2 style="text-align: center">Series/Anime</h2>
+	<div class="row"> 
+		<div class="column">
+			<img src="summer2022/series/paranoiaAgent.jpg" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="" style="width:100%">
+		</div>
+	</div>
+	
+	<!-- T E X T B O O K S -->
+	<h2 style="text-align: center">Textbooks</h2>
+	<div class="row"> 
+		<div class="column">
+			<img src="summer2022/textbooks/AVITDFACOM.jpg" style="width:100%">
+			<img src="summer2022/textbooks/diracLectures.jpg" style="width:100%">
+			<img src="summer2022/textbooks/complex.jpg" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="summer2022/textbooks/TopoGeomGaugeFileds.jpg" style="width:100%">
+			<img src="summer2022/textbooks/heisenbergPrinciples.jpg" style="width:100%">
+			<img src="summer2022/textbooks/Fourier.jpg" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="summer2022/textbooks/FirstStepsInDG.jpg" style="width:100%">
+			<img src="summer2022/textbooks/quantumMeasurement.jpg" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="summer2022/textbooks/griffithsEM.jpg" style="width:100%">
+			<img src="summer2022/textbooks/sakuraiModern.jpg" style="width:100%">
+		</div>
+	</div>
+	
+	<!-- P L A C E S -->
+	<h2 style="text-align: center">Places visited</h2>
+  </div>
+  <div class="Bottom"></div>
+  <div class="RightNotes"></div>
+</div>
+	</body>
+</html>

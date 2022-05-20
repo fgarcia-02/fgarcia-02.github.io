@@ -13,32 +13,31 @@
 	</script>
 	<link rel="stylesheet" href="MainStyles.css">
 	<link rel="stylesheet" href="DarkMode.css">
-	<title>Notes</title>
-	<style>
-	
-	</style>
+	<title>About me</title>
 	</head>
 	<body>
+		
 		<div class="container">
   <div class="Top">
   <h1 style="text-align: center"><a href="index.html">Fernando Garcia</a><h1>
 				<h3 style="text-align: center">
 					<a href="Blog.html" >Blog</a>   &nbsp  &nbsp
-					<a href="Notes.html" class="currentPage">Notes</a>    &nbsp  &nbsp
+					<a href="Notes.html" >Notes</a>    &nbsp  &nbsp
 					<a href="Other.html">Other</a>    &nbsp  &nbsp
-					<a href="AboutMe.html" >About me</a>
+					<a href="AboutMe.html" class="currentPage">About me</a>
 				<h3>
   </div>
   <div class="LeftMenu">
-	<p><span class="NA">◼</span> = Not available at the moment.</p>
+	
   </div>
   <div class="MyContent">
-  <h1>Mathematics</h1>
-	<p style="text-align: justify;" ><a href="" class="NA">&nbsp  &nbspOrdinary Differential Equations for Scientists and Engineers</a></p>
-	<p style="text-align: justify;" ><a href=""class="NA">&nbsp  &nbspTheory of ODEs</a></p>
-<h1>Physics</h1>
-<p style="text-align: justify;" ><a href=".html" class="NA">&nbsp  &nbspStatistical Mechanics</a></p>
-<p style="text-align: justify;" ><a href=".html" class="NA">&nbsp  &nbspAnalytical Mechanics</a></p>
+	<p style="text-align: justify;" >Hey there! My name is Fernando Garcia; I'm a physics and pure mathematics major at the University of New Mexico.</p>
+
+<p style="text-align: justify;" >My current interests lie in Quantum Mechanics and Mathematical exploits in physics.</p>
+
+<p style="text-align: justify;" >I love to play my electric guitar, watch movies, read, and above all, explore our universe: from trying new food and meeting new people to the intricate works of nature.</p>
+<br>
+<p style="text-align: right;" ><a href="Summer2022.html">What I'm enjoying this summer.</a></p>
   </div>
   <div class="Bottom"></div>
   <div class="RightNotes"></div>
