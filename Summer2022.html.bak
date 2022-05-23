@@ -95,6 +95,8 @@ white-space:nowrap; }
 		<div class="column">
 			<img src="summer2022/movies/WolfChildren.jpg" style="width:100%">
 			<p style="text-align:center;">Wolf Children<br>May 18th</p>
+			<img src="summer2022/movies/LaPlaneteSauvage.jpg" style="width:100%">
+			<p style="text-align:center;">Fantastic Planet<br>May 21st</p>
 		</div>
 		<div class="column">
 			<img src="summer2022/movies/TheBoyAndTheBeast.jpg" style="width:100%">
