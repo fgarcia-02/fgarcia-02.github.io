@@ -13,7 +13,9 @@
 .Top { grid-area: Top;
 white-space:nowrap; }
 
-.MyContent { grid-area: MyContent; }
+.MyContent { grid-area: MyContent;
+line-height: 1.6;
+ }
 
 .LeftMenu {
 	grid-area: LeftMenu;
@@ -38,7 +40,8 @@ white-space:nowrap; }
 	background-color: #494949;
 	border: 5px solid #A4A4A4;
 	border-radius: 15px;
-	padding: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
